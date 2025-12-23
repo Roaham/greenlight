@@ -1,0 +1,71 @@
+:root {
+  --color-bg: #1A1A1A;
+  --color-dark: #000405;
+  --color-fg: #fcfcfc;
+  --color-accent: #7AA2F7;
+  --color-border: #7AA2F7;
+  --color-warning: #a145914f;
+
+  --padding-s: 0.5rem;
+  --padding-m: 1rem;
+  --padding-x: 1.5rem;
+  --padding-xl: 3rem;
+  --padding-main-x: clamp(1rem, 15vw, 20rem);
+  --padding-main-y: 3rem;
+
+  --header-height: 4rem;
+  --border-width: 0.15rem;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  background-color: var(--color-bg);
+
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-m) var(--padding-main-x);
+  background-color: #181818;
+  backdrop-filter: blur(6px);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+* {
+  transition: 
+    color 0.15s ease,
+    background-color 0.15s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.15s ease;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  color: var(--color-fg);
+  text-decoration: none;
+  font-weight: 700;
+  gap: 5px;
+}
+
+header a:hover {
+  color: var(--color-accent);
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+

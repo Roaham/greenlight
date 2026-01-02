@@ -14,9 +14,14 @@ function Search({ onSearch }) {
   };
 
   return (
-    <div>
-      <input type="text" placeholder="Search some games :D"/>
-      <button><img src="./src/assets/lupa.png"></img></button>
+    <div class="main">
+      <div class="title">
+        <input type="text" placeholder="Search some games :D"/>
+        <button><img src="./src/assets/lupa.png"></img></button>
+      </div>
+      <div class="header-photo">
+        <img src="./src/assets/header.jpg"></img>
+      </div>
     </div>
   );
 }

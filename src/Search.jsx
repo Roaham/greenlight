@@ -14,16 +14,9 @@ function Search({ onSearch }) {
   };
 
   return (
-    <div className="search">
-      <form onSubmit={handleSearchSubmit}>
-        <input
-          type="text"
-          value={query}
-          onChange={handleSearchChange}
-          placeholder="Buscar juego..."
-        />
-        <button type="submit">Buscar</button>
-      </form>
+    <div>
+      <input type="text" placeholder="Search some games :D"/>
+      <button><img src="./src/assets/lupa.png"></img></button>
     </div>
   );
 }
